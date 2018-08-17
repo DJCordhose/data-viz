@@ -244,31 +244,86 @@ ca. 17.00 Uhr: Ende            </textarea>
         </section>
 
         <section data-markdown class="todo">
-            <textarea data-template>
-# Part II
-## Programmatic Plots with Seaborn 
+                <textarea data-template>
+Aktueller Plan
 
-https://seaborn.pydata.org/
+9.30: Beginn
+    1. Einführung in die Grundkonzepte der menschlichen Wahrnehmung (Olli)
+    2. Einführung in die Datenvisualisierung mit Matplotlib
 
-<img src='img/seaborn.png'>
+11.00 - 11.15: Kaffeepause
+    3. Visualization for Machine Learning
 
-Erst Seaborn mit dem Praktischen Beispiel bevor wir low level to matplotlib kommen
+12.30 - 13.30: Mittagspause
+    4. Grammatik für Visualisierungen und Interaktive Datenvisualisierung mit Altair (wie hier)
 
-            </textarea>
-            </section>
+AB HIER STEFAN?
+
+    * PCA, t-SNE, UMAP: Visualisierung von hochdimensionalen Daten
+
+15.30 - 15.45: Kaffeepause
+	* Manifold-Learning etc.
+
+ca. 17.00 Uhr: Ende            </textarea>
+        </section>
+
+
 
         <section data-markdown class="todo">
             <textarea data-template>
 # Part III
 ## Visualization for Machine Learning
 
+1. Basic Plots using Seaborn
+1. Plotting Decision Boundaries
 1. Accuracy and Loss over time
-1. Decision Boundaries
 1. Basic Visualizations and Correlation Plots (booster/1-plot.ipynb)
 1. 2D Projection of 3D surface: https://plot.ly/python/2d-projection-of-3d-surface/ 
 
             </textarea>
         </section>
+
+        <section data-markdown class="todo">
+            <textarea data-template>
+## Programmatic Plots with Seaborn 
+
+<img src='img/seaborn.png'>
+
+https://seaborn.pydata.org/
+
+needs matplotlib as a prerequisite
+            </textarea>
+            </section>
+
+        <section data-markdown class="todo">
+            <textarea data-template>
+* how Seaborn notebook
+* let people solve the simple example
+            </textarea>
+            </section>
+
+        <section data-markdown>
+            <textarea data-template>
+### Exercise
+
+Choose one other style of plot from
+
+https://seaborn.pydata.org/examples/index.html
+
+and make it work in a notebook.
+
+If you are not sure what to use, use
+
+https://seaborn.pydata.org/examples/color_palettes.html 
+
+or 
+
+https://seaborn.pydata.org/examples/anscombes_quartet.html
+            </textarea>
+            </section>
+
+
+            
 
 
         <section data-markdown class="todo">
@@ -392,7 +447,7 @@ Leland Wilkinson, https://www.amazon.com/Grammar-Graphics-Statistics-Computing/d
                 <textarea data-template>
 ### Example - number of flights per day
 
-<img src='img/dataviz/grammar-bar-example.png' height="500px">
+<img src='img/grammar-bar-example.png' height="500px">
 
 <small>Which is which?</small>
                     </textarea>
@@ -416,7 +471,7 @@ Leland Wilkinson, https://www.amazon.com/Grammar-Graphics-Statistics-Computing/d
             <textarea data-template>
 ### Vega-Lite
 
-<img src='img/dataviz/vega-lite.png'>
+<img src='img/vega-lite.png'>
 <small>https://vega.github.io/vega-lite/</small>
                 </textarea>
             </section>
@@ -493,7 +548,7 @@ https://beta.observablehq.com/@djcordhose/vega-lite
             <textarea data-template>
 ### Altair
 
-<img src='img/dataviz/altair.png' height="500px">
+<img src='img/altair.png' height="500px">
 <small>
 https://altair-viz.github.io/
 <br>
@@ -542,7 +597,7 @@ alt.Chart(customers).mark_point().encode(
     color='group'
 )```
 
-<img src='img/dataviz/car-accidents-altair1.png' height="300px">
+<img src='img/car-accidents-altair1.png' height="300px">
 
 <small>
 https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
@@ -556,7 +611,7 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
     
 This is what we would like to have:
 
-<img src='img/dataviz/car-accidents-altair2.png' height="300px">
+<img src='img/car-accidents-altair2.png' height="300px">
 
 <small>
 https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
@@ -576,11 +631,11 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
             <h2><small>Your #data from another perspective with interactive #dataviz</small></h2>
             <div>
                 <a href="https://twitter.com/Creatuluw/status/749151998415634432" target="_blank">
-                <img src="img/dataviz/cat-upside-down.jpg" height="450px"
+                <img src="img/cat-upside-down.jpg" height="450px"
                      style="float: left; padding-right: 50px; padding-left: 150px">
                     </a>
                     <a href="https://twitter.com/planetepics/status/914792139309150208" target="_blank">
-                <img src="img/dataviz/dataviz-cat.jpg" height="450px" style="float: left">
+                <img src="img/dataviz-cat.jpg" height="450px" style="float: left">
                 </a>
 
             </div>
@@ -607,7 +662,7 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
         <textarea data-template>
 ### Demo 2: Interactive exploration specified declaratively
 
-<img src='img/dataviz/car-accidents-altair-crossfilter.png'>
+<img src='img/car-accidents-altair-crossfilter.png'>
 
 <small>
 https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-crossfilter.ipynb
@@ -651,6 +706,9 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
             $('.local').remove();
         }
         Reveal.addEventListener( 'ready', function( event ) {
+            // do we want this???
+            $('li').addClass('fragment')
+
             if (window.location.hostname.indexOf('localhost') !== -1) {
                 // only applies to presentation version
                 Reveal.configure({ controls: false });
@@ -660,12 +718,15 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
             }
             // applies to all versions
             $('code').addClass('line-numbers');
+
+            // make all links open in new tab
+            $('a').attr('target', '_blank')
+
         } );
-        // $('section').attr('data-background-image', "backgrounds/light-metal.jpg");
-        // $('section').attr('data-background-image', "backgrounds/pink.jpg");
-        // $('section').attr('data-background-image', "backgrounds/white.jpg");
-        $('section').attr('data-background-image', "backgrounds/murmel2.jpg");
-    //    $('section').attr('data-background-image', "backgrounds/code.jpg");
+        $('section:not([data-background])').attr('data-background', "background/white.jpg");
+        // $('section:not([data-background])').attr('data-background', "background/white-transparent.jpg");
+        // $('section').attr('data-background-size', "1620px");
+
     </script>
     
 <script>
@@ -677,6 +738,7 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
         progress: true,
         history: true,
         center: true,
+        width: 1100,
 
         transition: 'fade', // none/fade/slide/convex/concave/zoom
 
