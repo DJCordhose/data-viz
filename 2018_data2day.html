@@ -148,13 +148,6 @@
 <div class="reveal">
     <div class="slides">
 
-            <section data-markdown class="preparation">
-                    <textarea data-template>
-### Preparation
-* Rehearse Demos
-
-                </textarea>
-            </section>
 <!-- 
 Datenvisualisierung mit Python
 
@@ -179,6 +172,8 @@ Alle Teile werden mit auf Colab gehosteten Notebooks unterstützt und enthalten 
             <p><a target="_blank" href="https://www.data2day.de/veranstaltung-7525-datenvisualisierung-mit-python.html?id=7525">
                 data2day, September 2018
             </a></p>
+            <h4><a href="xxx">Stefan Kühn</a> / <a href="xxx">@xxx</a>
+            </h4>
             <h4><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
             </h4>
             <small>
@@ -186,509 +181,49 @@ Alle Teile werden mit auf Colab gehosteten Notebooks unterstützt und enthalten 
                 https://djcordhose.github.io/ai/2018_data2day_dataviz.html</a>
             </small>
         </section>
-
-        <section data-markdown class="todo">
+        <section data-markdown>
                 <textarea data-template>
-- Matplotlib 
-  - subplot vs subplots
-    - https://twitter.com/DJCordhose/status/1018214082883870720
-  - Legends: https://twitter.com/AllenDowney/status/1020490910050791424?s=03
-
-- Mind Sets
-    - Matplotlib: from Matlab, basic idea of axes
-    - Altair: different mental model: grammar of graphics
-
-- seaborn 0.9 is out! New plots, better aesthetics, improved documentation, and other novelties here:
-    https://twitter.com/michaelwaskom/status/1018980107397091329
-
-- Wrap Up
-- bitly link
+## Ablauf
             </textarea>
         </section>
-
-        <section data-markdown class="todo">
-                <textarea data-template>
-- Übungen für alles
-- So machen, dass es auf Colab läuft (umap per pip?)
-
-9.30: Beginn
-    * Einführung in die Grundkonzepte der menschlichen Wahrnehmung (wie hier im ersten Teil, evtl. bisschen mehr)
-      - Gemeinsame Experimente klauen von Franconeri
-    * Programmatic Plots with Seaborn
-        * Mein Datensatz, alles an Viz was geht aus meinen Notebooks nehmen
-        * Scatter Plots, Seaborn
-    * Explorative Datenvisualisierung mit Matplotlib und Seaborn
-        * Aus Erstem Notebook vom Matplitlib Tutorial klauen
-            * C:\Users\olive\Development\scipy\AnatomyOfMatplotlib/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
-            * kein extra Numpy, verstehe ich ja selbst kaum
-        * subplots: https://github.com/DJCordhose/scikit-learn/commits/master
-
-
-11.00 - 11.15: Kaffeepause
-    * Visualisierung von Decision Boundaries
-      * Wie in Poster, aber auch in https://github.com/DJCordhose/scikit-learn/commits/master
-    * PCA, t-SNE, UMAP: Visualisierung von hochdimensionalen Daten (aus HAW Folien, neuestes UMAP ausprobieren)
-      * auf meinen Unfalldaten ausprobieren
-      * http://umap-learn.readthedocs.io/en/latest/
-      * http://umap-learn.readthedocs.io/en/latest/transform.html
-      * PCA und t-SNE mit sklearn              
-
-12.30 - 13.30: Mittagspause
-	* Grammatik für Visualisierungen (wie hier)
-	* Interaktive Datenvisualisierung mit Altair (wie hier)
-
-15.30 - 15.45: Kaffeepause
-	* Manifold-Learning etc. (das macht Stefan)
-
-ca. 17.00 Uhr: Ende            </textarea>
-        </section>
-
-        <section data-markdown class="todo">
-                <textarea data-template>
-Aktueller Plan
-
-9.30: Beginn
-    1. Einführung in die Grundkonzepte der menschlichen Wahrnehmung (Olli)
-    2. Einführung in die Datenvisualisierung mit Matplotlib
-
-11.00 - 11.15: Kaffeepause
-    3. Visualization for Machine Learning
-
-12.30 - 13.30: Mittagspause
-    4. Grammatik für Visualisierungen und Interaktive Datenvisualisierung mit Altair (wie hier)
-
-AB HIER STEFAN?
-
-    * PCA, t-SNE, UMAP: Visualisierung von hochdimensionalen Daten
-
-15.30 - 15.45: Kaffeepause
-	* Manifold-Learning etc.
-
-ca. 17.00 Uhr: Ende            </textarea>
-        </section>
-
-
-
-        <section data-markdown class="todo">
-            <textarea data-template>
-# Part III
-## Visualization for Machine Learning
-
-1. Basic Plots using Seaborn
-1. Plotting Decision Boundaries
-1. Accuracy and Loss over time
-1. Basic Visualizations and Correlation Plots (booster/1-plot.ipynb)
-1. 2D Projection of 3D surface: https://plot.ly/python/2d-projection-of-3d-surface/ 
-
-            </textarea>
-        </section>
-
-        <section data-markdown class="todo">
-            <textarea data-template>
-## Programmatic Plots with Seaborn 
-
-<img src='img/seaborn.png'>
-
-https://seaborn.pydata.org/
-
-needs matplotlib as a prerequisite
-            </textarea>
-            </section>
-
-        <section data-markdown class="todo">
-            <textarea data-template>
-* how Seaborn notebook
-* let people solve the simple example
-            </textarea>
-            </section>
 
         <section data-markdown>
             <textarea data-template>
-### Exercise
+### Vormittag: Grundlagen
 
-Choose one other style of plot from
+_9.30: Beginn_
 
-https://seaborn.pydata.org/examples/index.html
+(1) <a href='1-human-perception.html'>Einführung in die Grundkonzepte der menschlichen Wahrnehmung</a>
 
-and make it work in a notebook.
+(2) <a href='2-matplotlib.html'>Einführung in die Datenvisualisierung mit Matplotlib</a>
 
-If you are not sure what to use, use
+_11.00 - 11.15: Kaffeepause_
 
-https://seaborn.pydata.org/examples/color_palettes.html 
+(3) <a href='3-altair.html'>Grammatik für Visualisierungen und Interaktive Datenvisualisierung mit Altair</a>
 
-or 
+_12.30 - 13.30: Mittagspause_
 
-https://seaborn.pydata.org/examples/anscombes_quartet.html
-            </textarea>
-            </section>
-
-
-            
-
-
-        <section data-markdown class="todo">
-            <textarea data-template>
-# Part II
-## Basic Visualization with Matplotlot
-
-https://github.com/matplotlib/AnatomyOfMatplotlib
-
-https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
-https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part2-Plotting_Methods_Overview.ipynb
-
-
-            </textarea>
-        </section>
-
-
-        <section>
-                <p>Our brains do a phenomenal job when processing images.</p>
-                <p class="fragment">We quickly see patterns and do automatic clustering without even thinking.</p>
-                <p class="fragment">As humans looking at a computer screen we are also naturally limited to two-dimensional visualizations that at best change over time and reaction to interaction.</p>
-                <p class="fragment" style="float: right"><small>Oliver Zeigermann</small></p>
-            </section>
-
-        <section data-markdown>
-            <textarea data-template>
-# Part I
-## What relevant information do we have on human perception?
-            </textarea>
-        </section>
-            
-        <section data-markdown class="todo">
-            <textarea data-template>
-### Lightness Perception
-https://twitter.com/AkiyoshiKitaoka/status/1028473566193315841
-</textarea>
-        </section>
-
-        <section>
-            <p>How easy is it to tell the Belgium from the German Flag?</p>
-            <div class="fragment" style="float: left">
-                <img src="img/flag-belgium.png" height="400">
-                <p><small>Belgium Flag</small></p>
-            </div>
-            <div class="fragment" style="float: right">
-              <img src="img/flag-germany.png" height="400">
-                <p><small>German Flag</small></p>
-            </div>
-       </section>
-
-
-       <section data-markdown>
-            <textarea data-template>
-### Fast Feature Decoding in our Brains
-
-<img src='img/SteveFranconeri_fast_feature_encoding.jpg' height="500px">
-<small>
-https://twitter.com/SteveFranconeri/status/996309503418216448     
-</small>
-    </textarea>
+        </textarea>
     </section>
 
     <section data-markdown>
         <textarea data-template>
-### Gestalt principles apply
+### Nachmittag: Spezialisierte Themen 
 
-We see things as belonging together when
+_12.30 - 13.30: Mittagspause_
 
-* they are close to each other (proximity)
-* are aligned in the same direction (continuity)
+(4) <a href='4-dataviz-for-ml.html'>Visualization for Machine Learning</a>
 
-<a href="https://twitter.com/pablostanley/status/974303621092225024" target="_blank">
-    Animated Gestalt Principls</a>
+(5) <a href='5-dimensionalty-reduction.html'>PCA, t-SNE, UMAP: Visualisierung von hochdimensionalen Daten</a>
 
-        </textarea>
-</section>
+_15.30 - 15.45: Kaffeepause_
 
-<section data-markdown>
-        <textarea data-template>
-### Laws of UX
+(6) Manifold-Learning etc.
 
-1. Immediate Reactions (<400ms)
-1. Do not surprise people (things should work like people expect)
-1. You can only hold 7 things (+/- 2) in your mind at the same time
-
-https://lawsofux.com/
-
-        </textarea>
-</section>
-
-
-        <section data-markdown>
-            <textarea data-template>
-# Part II
-
-## The Grammar of Graphics
-
-<small>
-Leland Wilkinson, https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448
-</small>
-            </textarea>
-        </section>
-    
-        <section data-markdown>
-            <textarea data-template>
-### The Grammar of Graphics
-<ul>
-
-<li class="fragment"><em>Data:</em> Model for what we want to visualize
-<li class="fragment"><em>Transform:</em> Filtering, Aggregation, Binning, etc.
-<li class="fragment"><em>Mark:</em> How to represent the data visually
-<li class="fragment"><em>Encoding:</em> Mapping between data and mark properties
-<li class="fragment"><em>Scale:</em> Function mapping values in data space to visual space
-<li class="fragment"><em>Guides:</em> Legends, and Axes to visualize Scales
-</ul>
-
-            </textarea>
-        </section>
-
-        <section data-markdown>
-                <textarea data-template>
-### Example - number of flights per day
-
-<img src='img/grammar-bar-example.png' height="500px">
-
-<small>Which is which?</small>
-                    </textarea>
-            </section>
-            
-        <section data-markdown>
-            <textarea data-template>
-### Grammar elements for example
-<ul>
-<li class="fragment"><em>Data:</em> a list of all flights
-<li class="fragment"><em>Transform:</em> Binning per day
-<li class="fragment"><em>Mark:</em> Bar
-<li class="fragment"><em>Encoding:</em> Number of flights to height
-<li class="fragment"><em>Scale:</em> 10 flights are one pixel
-<li class="fragment"><em>Guides:</em> Axes showing each 1000 count 
-</ul>
-            </textarea>
-        </section>
-
-        <section data-markdown>
-            <textarea data-template>
-### Vega-Lite
-
-<img src='img/vega-lite.png'>
-<small>https://vega.github.io/vega-lite/</small>
-                </textarea>
-            </section>
-
-        <section data-markdown>
-                <textarea data-template>
-### Misson of Vega-Lite
-
-_Facilitate exploratory data analysis with an expressive yet concise language to specify interactive multi-view graphics_
-
-No low level programming necessary, but also not possible. Limited customizations possible, though.
-
-https://vega.github.io/vega-lite/
-                    </textarea>
-                </section>
-
-
-            <section data-markdown>
-                <textarea data-template>
-### Demo using Online Editor
-
-https://vega.github.io/editor/#/examples/vega-lite/line
-
-Google's stock price over time
-                    </textarea>
-            </section>
-        <section data-markdown>
-            <textarea data-template>
-### Running in the browser, but no JavaScript programming required
-
-* Vega-Lite compiles down to Vega (not D3)
-* Both offer declarative programming models
-* Vega-Lite is high-level
-* Both use a JSON syntax by default (but we can do something about it)
-
-                </textarea>
-            </section>
-
-            <section data-markdown>
-                <textarea data-template>
-### Vega-Lite is great, but...
-
-* "programming" in JSON is not everyones cup of tea
-* your language of choice might be Python
-</textarea>
-</section>
-
-<section data-markdown>
-        <textarea data-template>
-### You can get rid of the JSON and get JS Objects
-
-```
-vegalite({
-  data: {
-    values: [
-      {a: "A", b: 28}, {a: "B", b: 55}, {a: "C", b: 43},
-      {a: "D", b: 91}, {a: "E", b: 81}, {a: "F", b: 53},
-      {a: "G", b: 19}, {a: "H", b: 87}, {a: "I", b: 52}
-    ]
-  },
-  mark: "bar",
-  encoding: {
-    x: {field: "a", type: "ordinal"},
-    y: {field: "b", type: "quantitative"}
-  }
-})```
-<small>   
-https://beta.observablehq.com/@djcordhose/vega-lite
-</small>
+_ca. 17.00 Uhr: Ende_
     </textarea>
-    </section>
-
-        <section data-markdown>
-            <textarea data-template>
-### Altair
-
-<img src='img/altair.png' height="500px">
-<small>
-https://altair-viz.github.io/
-<br>
-https://altair-viz.github.io/gallery/index.html
-</small>
-        
-                </textarea>
-            </section>
-
-<section data-markdown>
-        <textarea data-template>
-### Philosophy
-
-_We realize that a declarative API will necessarily be limited compared to the full programmatic APIs of Matplotlib, Bokeh,
-etc. That is a deliberate design choice we feel is needed to simplify the user experience of exploratory visualization._
-
-<small>            
-https://github.com/altair-viz/altair#design-approach-and-solution
-<br>
-https://github.com/altair-viz/altair#project-philosophy
-</small>
-</textarea>
 </section>
 
-        <!-- <section data-markdown>
-            <textarea data-template>
-### Altair Installation (using conda as a base)
-
-```
-conda install -c conda-forge altair vega_datasets notebook vega
-```
-<small>
-https://altair-viz.github.io/getting_started/installation.html#installation-notebook
-</small>
-</textarea>
-</section> -->
-
-<section data-markdown>
-    <textarea data-template>
-### Altair Fluent API
-
-```
-alt.Chart(customers).mark_point().encode(
-    x='age', 
-    y='max speed', 
-    color='group'
-)```
-
-<img src='img/car-accidents-altair1.png' height="300px">
-
-<small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
-</small>
-                </textarea>
-            </section>
-
-            <section data-markdown>
-                    <textarea data-template>
-### Demo 1: Tuning our visualization a little bit
-    
-This is what we would like to have:
-
-<img src='img/car-accidents-altair2.png' height="300px">
-
-<small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
-</small>
-    </textarea>
-    </section>
-    
-        <section data-markdown>
-            <textarea data-template>
-# Part III
-
-## Making things Interactive
-            </textarea>
-        </section>
-
-        <section>
-            <h2><small>Your #data from another perspective with interactive #dataviz</small></h2>
-            <div>
-                <a href="https://twitter.com/Creatuluw/status/749151998415634432" target="_blank">
-                <img src="img/cat-upside-down.jpg" height="450px"
-                     style="float: left; padding-right: 50px; padding-left: 150px">
-                    </a>
-                    <a href="https://twitter.com/planetepics/status/914792139309150208" target="_blank">
-                <img src="img/dataviz-cat.jpg" height="450px" style="float: left">
-                </a>
-
-            </div>
-            <p style="clear: both"><small><a target="_blank" href="https://twitter.com/Creatuluw/status/749151998415634432">
-                https://twitter.com/Creatuluw/status/749151998415634432</a>
-                <br>
-                <a href="https://twitter.com/planetepics/status/914792139309150208" target="_blank">
-                    https://twitter.com/planetepics/status/914792139309150208
-                </a>
-                </small></p>
-        </section>
-
-        <!-- <section data-markdown>
-                <textarea data-template>
-### Selections - Interaction the Vega-Lite way
-
- 1. Event processing — how does the interaction occur? 
- 2. Points of interest — which marks/data points were interacted with? 
- 3. Predicate function — what is the full set of selected marks/data points
-</textarea>
-</section> -->
-
-<section data-markdown>
-        <textarea data-template>
-### Demo 2: Interactive exploration specified declaratively
-
-<img src='img/car-accidents-altair-crossfilter.png'>
-
-<small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-crossfilter.ipynb
-</small>
-</textarea>
-</section>
-
-<!-- <section data-markdown class="todo">
-    <textarea data-template>
-### Alternatives
-
-* Plotly
-  * https://twitter.com/plotlygraphs/status/1012365168834174976?s=03
-  * https://medium.com/@plotlygraphs/introducing-plotly-py-3-0-0-7bb1333f69c6
-* https://github.com/bloomberg/bqplot
-* http://holoviews.org
-</textarea>
-</section> -->
-
-<section data-markdown class="todo">
-        <textarea data-template>
-### Wrapping Up
-    
-    </textarea>
-    </section>
-    
     </div>
 
 </div>
