@@ -158,39 +158,167 @@
 <section>
             <h2>Basic Visualization with Matplotlot</h2>
         </section>
-        <section class="todo">
-        </section>
-        
-        <section data-markdown class="todo">
-                <textarea data-template>
+
+<section data-markdown class="todo">
+    <textarea data-template>
 <h1>Work in Progress</h1>
 
-- Matplotlib 
-  - subplot vs subplots
-    - https://twitter.com/DJCordhose/status/1018214082883870720
-  - Legends: https://twitter.com/AllenDowney/status/1020490910050791424?s=03
-
-  * Aus Erstem Notebook vom Matplitlib Tutorial klauen
-  * C:\Users\olive\Development\scipy\AnatomyOfMatplotlib/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
-  * kein extra Numpy, verstehe ich ja selbst kaum
-* subplots: https://github.com/DJCordhose/scikit-learn/commits/master
+* Working with Texts and Annotations
+* Chart Overview
+* Check what we need for 3-data-viz module and cover here
+* Take stuff from       
+  * https://github.com/matplotlib/AnatomyOfMatplotlib
+    * https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
+    * https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part2-Plotting_Methods_Overview.ipynb
 
 - Wrap Up
 - bitly link
-            </textarea>
-        </section>
+</textarea>
+</section>
 
-
-        <section data-markdown class="todo">
+        <section data-markdown>
             <textarea data-template>
-https://github.com/matplotlib/AnatomyOfMatplotlib
+<img src='img/matplotlib/logo.png'>
+<img src='img/matplotlib/intro.png'>
 
-https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
-https://colab.research.google.com/github/matplotlib/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part2-Plotting_Methods_Overview.ipynb
+https://matplotlib.org/
+        </textarea>
+    </section>
+            <section data-markdown>
+                    <textarea data-template>
+### Matplotlib and its friends
 
+<img src='img/matplotlib/trio.png' height="500px">
 
+<small>
+https://twitter.com/vboykis/status/1032631145035427840    
+</small>
+                </textarea>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+### Notebooks on Colab to make them run
+
+<img src='img/matplotlib/trio2.png'>
+
+<small>
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/2-1-matplotlib-hello-world.ipynb
+</small>
             </textarea>
         </section>
+
+        <section data-markdown>
+            <textarea data-template>
+### Matplotlib comes with a state-based, MATLAB-like way of plotting
+
+<img src='img/matplotlib/pyplot.png'>
+
+<small>
+https://matplotlib.org/api/_as_gen/matplotlib.pyplot.html
+</small>
+        </textarea>
+    </section>
+    
+    <section data-markdown>
+        <textarea data-template>
+### It is recommended to use the Object Oriented API, though
+
+<small>
+https://matplotlib.org/api/pyplot_summary.html#the-object-oriented-api
+</small>
+    
+```
+fig, ax = plt.subplots()
+ax.plot(x, y)
+fig.savefig("test.png")
+```
+
+* creating subplots: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots
+* most things you will do on subplots: https://matplotlib.org/api/axes_api.html
+* container around subplots: https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure
+    </textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Don't let naming confuse you
+
+<img src='img/matplotlib/figure_axes_axis_labeled.png' height="500px">
+
+<small>
+https://github.com/matplotlib/AnatomyOfMatplotlib/blob/master/images/figure_axes_axis_labeled.png
+</small>
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### subplots vs subplot
+
+* <em>subplot</em> is an API inspired by MATLAB
+* its API is totally weird if you MATLAB is not your mind set
+* use <em>subplots</em> as shown before if you want an intuitive interface
+
+because their names are so close to each other, if things do not behave as expected make sure you are using the right API
+
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Exercise: Create a composed Figure using the OO style API
+
+<img src='notebooks/img/two-subplots.png'>
+
+<small>
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/2-2-matplotlib-oo-api.ipynb
+</small>
+        
+</textarea>
+</section>
+
+
+<section data-markdown class="todo">
+    <textarea data-template>
+### Working with Texts and Annotations
+
+* https://matplotlib.org/1.5.0/users/pyplot_tutorial.html#working-with-text
+
+<small>
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/2-3-matplotlib-text-and-annotation.ipynb
+</small>
+        
+</textarea>
+</section>
+
+<section data-markdown class="todo">
+    <textarea data-template>
+### Chart Overview
+
+* https://matplotlib.org/gallery.html
+
+<small>
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/2-4-matplotlib-charts-overview.ipynb
+</small>
+        
+</textarea>
+</section>
+
+<section data-markdown class="todo">
+    <textarea data-template>
+### What else
+
+* Legends
+  * https://twitter.com/choldgraf/status/1020351698735226880
+* Axis / Scale
+
+<small>
+
+</small>
+        
+</textarea>
+</section>
 
 
     </div>
