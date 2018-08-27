@@ -148,88 +148,230 @@
 <div class="reveal">
     <div class="slides">
 
-            <!-- <section data-markdown class="preparation">
+            <section data-markdown class="preparation">
                     <textarea data-template>
 ### Preparation
-* Rehearse Demos
+* Noch mal den Anfang von Franconeri gucken: https://www.youtube.com/watch?v=Jq2Rc0WlYTE&feature=youtu.be
 
                 </textarea>
-            </section> -->
+            </section>
 <section>
             <h3>What relevant information do we have on human perception?</h3>
             </h2>
         </section>
 
-<section class="todo">
-    <h1>Work in Progress</h1>
-- Experimente klauen von Franconeri
-    
-</section>
+        <section data-markdown class="todo">
+                <textarea data-template>
+# Work in Progress
+
+* Wrap Up
+
+            </textarea>
+        </section>
 
         <section>
-                <p>Our brains do a phenomenal job when processing images.</p>
+                <h3>Our brains do a phenomenal job when processing images</h3>
                 <p class="fragment">We quickly see patterns and do automatic clustering without even thinking.</p>
                 <p class="fragment">As humans looking at a computer screen we are also naturally limited to two-dimensional visualizations that at best change over time and reaction to interaction.</p>
                 <p class="fragment" style="float: right"><small>Oliver Zeigermann</small></p>
             </section>
 
-        <section>
-            <p>How easy is it to tell the Belgium from the German Flag?</p>
-            <div class="fragment" style="float: left">
-                <img src="img/flag-belgium.png" height="400">
-                <p><small>Belgium Flag</small></p>
-            </div>
-            <div class="fragment" style="float: right">
-              <img src="img/flag-germany.png" height="400">
-                <p><small>German Flag</small></p>
-            </div>
-       </section>
-
-
-       <section data-markdown>
-            <textarea data-template>
-### Fast Feature Decoding in our Brains
-
-<img src='img/SteveFranconeri_fast_feature_encoding.jpg' height="500px">
-<small>
-https://twitter.com/SteveFranconeri/status/996309503418216448     
-</small>
-    </textarea>
-    </section>
+            <section data-markdown>
+                    <textarea data-template>
+## Part I: Gestalt and User Experience (UX)
+            </textarea>
+            </section>
 
     <section data-markdown>
+    <textarea data-template>
+### Key Idea: Emergence
+
+Order Order appearing out of chaos
+
+<small>People will identify elements first by their general form. Simple well defined object will communicate more quickly than a detailed object.
+    </small>
+<img src='img/emergence_03.jpg' height="350px">
+
+<small>
+https://eggbertsplace.github.io/principles-of-gestalt/#slide=4
+<br>
+P. Sinha & T. Adelson (1997)
+</small>
+</textarea>
+</section>
+
+
+    <section data-markdown>
+    <textarea data-template>
+### More Gestalt Principles
+
+<video controls src="video/gestalt.mp4" type="video/mp4" height="400" muted></video>
+
+<small>
+https://twitter.com/pablostanley/status/974303621092225024
+<br>
+https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/
+</small>
+</textarea>
+</section>
+
+<section data-markdown style="font-size: xx-large">
         <textarea data-template>
-### Gestalt principles apply
+### Laws of UX
 
-We see things as belonging together when
+1. Users often perceive aesthetically pleasing design as design that’s more usable
+1. Immediate Reactions (&lt;400ms)
+1. Do not surprise people (things should work like people expect)
+1. You can only hold 7 things (+/- 2) in your mind at the same time
+1. Hick’s Law: The time it takes to make a decision increases with the number and complexity of choices.
+1. Jakob’s Law: Users as well as developers have a physical aversion to things that do not fit their mental model (slow thinking)
 
-* they are close to each other (proximity)
-* are aligned in the same direction (continuity)
-
-<a href="https://twitter.com/pablostanley/status/974303621092225024" target="_blank">
-    Animated Gestalt Principls</a>
-
+https://lawsofux.com/
         </textarea>
 </section>
 
 <section data-markdown>
         <textarea data-template>
-### Laws of UX
+## Part II: Data Visualizations, Fast and Slow
 
-1. Immediate Reactions (&lt;400ms)
-1. Do not surprise people (things should work like people expect)
-1. You can only hold 7 things (+/- 2) in your mind at the same time
+Largely based on the great talk of Steve Franconeri at OpenVis Conf 2018
 
-https://lawsofux.com/
+https://youtu.be/Jq2Rc0WlYTE
 
-        </textarea>
+<a href='https://twitter.com/SteveFranconeri'>@SteveFranconeri</a>
+</a></textarea>
 </section>
+
+<section>
+    <p>How easy is it to tell the Belgium from the German Flag?</p>
+    <div class="fragment" style="float: left">
+        <img src="img/flag-belgium.png" height="400">
+        <p><small>Belgium Flag</small></p>
+    </div>
+    <div class="fragment" style="float: right">
+      <img src="img/flag-germany.png" height="400">
+        <p><small>German Flag</small></p>
+    </div>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Purse or Dachshund?
+
+<img src='img/purse_or_dachshund.jpg' height="500px">
+<small>
+https://twitter.com/dumb_hannah/status/891678558841708544
+</small>
+</textarea>
+</section>
+
+
+<section data-markdown>
+    <textarea data-template>
+### Visualizations are ambiguous figures
+
+<img src='img/franconeri-ambiguous-visualizations.jpg' height="500px">
+<small>
+https://twitter.com/SteveFranconeri/status/996309497290338304
+</small>
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### You have at least 3 tools for seeing
+
+<small>Two tools operate within ~100ms, the last is painfully slow.</small>
+
+<img src='img/franconeri-three-tools.jpg' height="400px">
+<small>
+https://twitter.com/SteveFranconeri/status/996309497290338304
+</small>
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Tool 1: _Fast_ Object Recognition
+
+<img src='img/franconeri-fast-object-recognition.jpg' height="400px">
+
+<small>
+https://youtu.be/Jq2Rc0WlYTE?t=357
+</small>
+</textarea>
+</section>
+
+
+<section data-markdown>
+    <textarea data-template>
+### Tool 2: _Fast_ Feature Distributions
+
+<img src='img/SteveFranconeri_fast_feature_encoding.jpg' height="400px">
+<small>
+https://twitter.com/SteveFranconeri/status/996309503418216448
+</small>
+</textarea>
+</section>
+
+<section>
+    <h3>Tool 3: <em>Slow</em> serial comparison of individual properties of individual objects</h3>
+    <p>
+    <small>You can only do a handful of these per second</small>
+</p>
+    <div class="fragment" style="float: left">
+        <img src="img/franconeri_test_1.jpg" height="320">
+    </div>
+    <div class="fragment" style="float: right">
+      <img src="img/franconeri_test_2.jpg" height="320">
+    </div>
+<small>
+    <a href='https://twitter.com/SteveFranconeri/status/996309506425544705'>
+        https://twitter.com/SteveFranconeri/status/996309506425544705</a>
+
+</small>
+</section>
+
+<section data-markdown>
+        <textarea data-template>
+## Part I: Other Pitfalls
+
+A bit of entertainment
+
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Munker Illusion
+
+<small>Red appears to be red-purple (top left) or to be orange (top right). Green appears to be light blue (bottom left) or yellowish green (bottom right).
+    </small>
+
+<img src='img/munker1.jpg' height="400px">
+<small>
+https://twitter.com/AkiyoshiKitaoka/status/1033589849037582336
+</small>
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Munker Illusion: Explanation
+
+<img src='img/munker2.jpg' height="500px">
+<small>
+https://twitter.com/AkiyoshiKitaoka/status/1033591207107080192
+</small>
+</textarea>
+</section>
+
 
 <section data-markdown>
     <textarea data-template>
 ### Lightness Perception
 
-<video controls autoplay src="video/lightness.mp4" type="video/mp4" height="400" muted></video>
+<video controls src="video/lightness.mp4" type="video/mp4" height="400" muted></video>
 
 <small>
 https://twitter.com/AkiyoshiKitaoka/status/1028473566193315841
@@ -239,14 +381,13 @@ http://www.psy.ritsumei.ac.jp/~akitaoka/kosaku2e.html
 </textarea>
 </section>
 
-
 <section>
     <h3>How are we fooled?</h3>
     <div class="fragment" style="float: left">
         <img src="img/lighting_same_luminance.jpg" height="350">
         <p><small>Squares are of the same luminance gradient</small></p>
     </div>
-    <div class="fragment" style="float: left; padding-left: 100px">
+    <div class="fragment" style="float: left; padding-left: 00px">
       <img src="img/lighting_luminance_plus_illuminance.jpg" height="350">
         <p><small>But complete perception is composed</small></p>
     </div>
@@ -314,7 +455,7 @@ http://www.psy.ritsumei.ac.jp/~akitaoka/kosaku2e.html
         progress: true,
         history: true,
         center: true,
-        width: 1100,
+        width: 1000,
 
         transition: 'fade', // none/fade/slide/convex/concave/zoom
 
