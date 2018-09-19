@@ -161,22 +161,22 @@
             <p><em>Learn about a different mindset based on the Grammar of Graphics and have interaction in browsers</em></p>
            
         </section>
-    
-        <section data-markdown class="todo">
-                <textarea data-template>
-    # WORK IN PROGRESS
-    
-    - Different Mind Sets
-      - Matplotlib: from Matlab, basic idea of axes
-      - Altair: different mental model: grammar of graphics
+
+        <section data-markdown>
+            <textarea data-template>
+### Different Mind Sets
+
+* Matplotlib 
+ * from Matlab, basic idea of axes
+ * imperative
+ * flexible
+* Altair
+  * different mental model: grammar of graphics
+  * declarative
+  * restricted   
+                </textarea>
+        </section>
         
-* Fix notebooks and adapt to new data 
-* Add Exercises
-
-
-        </textarea>
-        </section>    
-
         <section data-markdown class="todo">
             <textarea data-template>
 
@@ -188,6 +188,9 @@
             <textarea data-template>
 ## The Grammar of Graphics
 
+<a href='https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448'>
+<img src='img/gog-book.jpg'>
+</a>
 <small>
 Leland Wilkinson, https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448
 </small>
@@ -212,7 +215,7 @@ Leland Wilkinson, https://www.amazon.com/Grammar-Graphics-Statistics-Computing/d
 
         <section data-markdown>
                 <textarea data-template>
-### Example - number of flights per day
+### Shared Exercise - number of flights per day
 
 <img src='img/grammar-bar-example.png' height="500px">
 
@@ -265,6 +268,19 @@ https://vega.github.io/editor/#/examples/vega-lite/line
 Google's stock price over time
                     </textarea>
             </section>
+
+        <section data-markdown>
+                <textarea data-template>
+### Shared Exercise
+
+* Do not show Google, but Apple stock price
+* Show individual data points, not lines
+* Render as SVG 
+
+https://vega.github.io/editor/#/examples/vega-lite/line
+                    </textarea>
+            </section>
+
         <section data-markdown>
             <textarea data-template>
 ### Running in the browser, but no JavaScript programming required
@@ -286,11 +302,10 @@ Google's stock price over time
 </textarea>
 </section>
 
-<section data-markdown>
-        <textarea data-template>
-### You can get rid of the JSON and get JS Objects
+<section>
+<h3>You can get rid of the JSON and get JS Objects</h3>
 
-```
+<pre><code contenteditable data-trim class="line-numbers python">
 vegalite({
   data: {
     values: [
@@ -304,11 +319,13 @@ vegalite({
     x: {field: "a", type: "ordinal"},
     y: {field: "b", type: "quantitative"}
   }
-})```
-<small>   
-https://beta.observablehq.com/@djcordhose/vega-lite
+})            </code></pre>
+
+        <p>
+<small>
+<a href='https://beta.observablehq.com/@djcordhose/vega-lite'>https://beta.observablehq.com/@djcordhose/vega-lite</a>
 </small>
-    </textarea>
+</p>
     </section>
 
         <section data-markdown>
@@ -345,8 +362,7 @@ https://github.com/altair-viz/altair#project-philosophy
 ### Altair Installation (using conda as a base)
 
 ```
-conda install -c conda-forge altair vega_datasets notebook vega
-```
+conda install -c conda-forge altair vega_datasets notebook vega```
 <small>
 https://altair-viz.github.io/getting_started/installation.html#installation-notebook
 </small>
@@ -364,10 +380,10 @@ alt.Chart(customers).mark_point().encode(
     color='group'
 )```
 
-<img src='img/car-accidents-altair1.png' height="300px">
+<img src='img/car-accidents-altair1.png' height="250px">
 
 <small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/4-1-altair-car-insurance-plot.ipynb    
 </small>
                 </textarea>
             </section>
@@ -381,9 +397,9 @@ This is what we would like to have:
 <img src='img/car-accidents-altair2.png' height="300px">
 
 <small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-plot.ipynb
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/4-1-altair-car-insurance-plot.ipynb    
 </small>
-    </textarea>
+            </textarea>
     </section>
     
         <section data-markdown>
@@ -430,12 +446,12 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
 <img src='img/car-accidents-altair-crossfilter.png'>
 
 <small>
-https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/altair-sandbox/car-insurance-crossfilter.ipynb
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/4-2-altair-car-insurance-crossfilter.ipynb    
 </small>
 </textarea>
 </section>
 
-<section data-markdown class="todo">
+<!-- <section data-markdown class="todo">
     <textarea data-template>
 ### Alternatives
 
@@ -452,7 +468,7 @@ https://colab.research.google.com/github/djcordhose/ai/blob/master/notebooks/alt
 ### Wrapping Up
     
     </textarea>
-    </section>
+    </section> -->
     
     </div>
 
