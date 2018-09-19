@@ -151,64 +151,13 @@
             <!-- <section data-markdown class="preparation">
                     <textarea data-template>
 ### Preparation
-* Rehearse Demos
 
                 </textarea>
             </section> -->
 <section>
             <h2>Data Visualizations for Machine Learning</h2>
-            <p><em>Give some real world examples, see what you really need. Also ML Viz might indeed be interesting</em></p>
+            <p><em>Give some real world examples, see what you really need from matplotlib. Also ML viz might indeed be interesting</em></p>
         </section>
-
-        <section data-markdown class="todo">
-            <textarea data-template>
-# WORK IN PROGRESS
-
-* Geht meshplot auch für Decision Boundaries? Oder nutzen wir das sogar?
-  * https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pcolormesh.html#matplotlib.pyplot.pcolormesh
-  * https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contour.html#matplotlib.pyplot.contour
-
-- seaborn 0.9 is out! New plots, better aesthetics, improved documentation, and other novelties here:
-    https://twitter.com/michaelwaskom/status/1018980107397091329
-
-- Wrap Up
-- bitly link
-
-* Programmatic Plots with Seaborn
-    * Mein Datensatz, alles an Viz was geht aus meinen Notebooks nehmen
-    * Scatter Plots, Seaborn
-
-* Visualisierung von Decision Boundaries
-    * Wie in Poster, aber auch in https://github.com/DJCordhose/scikit-learn/commits/master
-</textarea>
-</section>    
-
-
-
-        <section data-markdown>
-            <textarea data-template>
-### Matplotlib and its friends
-
-<img src='img/matplotlib/trio.png' height="500px">
-
-<small>
-https://twitter.com/vboykis/status/1032631145035427840    
-</small>
-        </textarea>
-    </section>
-
-    <section data-markdown>
-        <textarea data-template>
-### Notebooks on Colab to make them run
-
-<img src='img/matplotlib/trio2.png'>
-
-<small>
-https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/2-1-matplotlib-hello-world.ipynb
-</small>
-    </textarea>
-</section>
-
 
 
                         <section data-markdown>
@@ -218,35 +167,31 @@ https://colab.research.google.com/github/djcordhose/data-viz/blob/master/noteboo
 1. Pair-Plots using Seaborn
 1. Plotting Decision Boundaries
 1. Accuracy and Loss over time
-1. Visualizing Embeddings
+<!-- 1. Visualizing Embeddings -->
 
             </textarea>
         </section>
 
 
 
-        <section data-markdown class="todo">
+        <section data-markdown>
             <textarea data-template>
-## Programmatic Plots with Seaborn 
-
-<img src='img/seaborn.png'>
+### Programmatic Plots with Seaborn 
 
 https://seaborn.pydata.org/
 
-needs matplotlib as a prerequisite
-            </textarea>
-            </section>
+<img src='img/seaborn.png'>
 
-        <section data-markdown class="todo">
-            <textarea data-template>
-* how Seaborn notebook
-* let people solve the simple example
+<small>
+    https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/3-1-seaborn-pairplot.ipynb
+</small>
+    
             </textarea>
             </section>
 
         <section data-markdown>
             <textarea data-template>
-### Exercise
+### Optional Exercise
 
 Choose one other style of plot from
 
@@ -263,6 +208,40 @@ or
 https://seaborn.pydata.org/examples/anscombes_quartet.html
             </textarea>
             </section>
+
+        <section data-markdown>
+            <textarea data-template>
+### Decision Boundaries: Plotting Colored Areas 
+
+<small>
+https://matplotlib.org/gallery/images_contours_and_fields/pcolormesh_levels.html
+</small>
+<img src='img/sphx_glr_pcolormesh_levels_001.png' height="350">
+
+<small>
+Grid based: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.pcolormesh.html
+<br>
+Point based: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contourf.html
+<br>
+Decision Boundaries: https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/3-2-decision-boundaries.ipynb
+</small>
+    
+            </textarea>
+            </section>
+
+        <section data-markdown>
+            <textarea data-template>
+### Training history: Plotting Lines
+
+<img src='img/history.png' height="350">
+
+<small>
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/3-3-history.ipynb
+</small>
+    
+            </textarea>
+            </section>
+
 
     </div>
 
