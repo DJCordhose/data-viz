@@ -332,7 +332,23 @@ http://setosa.io/ev/principal-component-analysis/
 1. How many principal components would you advice to drop?
     </textarea>
     </section>
+
     
+<section>
+<h3>Typical Use Case: Dimensionality Reduction</h3>
+<div style="float: left">
+        <img src="img/unsupervised/pca-example.png" height="500px">
+    </div>
+    <div style="float: right" class="fragment">
+            <img src="img/unsupervised/pca-example-pcs.jpg" height="500px">
+    </div>
+<small>
+    <a href="https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/5-1-pca.ipynb">
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/5-1-pca.ipynb
+</a>
+</small>    
+        </section>
+
 <section>
 <h2>t-SNE</h2>
 <h3>t-distributed stochastic neighbor embedding</h3>
@@ -535,6 +551,20 @@ _For the 2 cluster example, can you find a perplexity that no longer gives good 
 </textarea>
 </section>
 
+<section data-markdown>
+    <textarea data-template>
+### T-SNE can also reduce dimensions
+
+1. There is no model, however
+1. can only perform <em>fit_transform</em>
+1. works well on clusters
+
+<small>
+    https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/5-2-t-sne.ipynb
+</small>
+</textarea>
+</section>
+
 
 <section>
 <h3>UMAP: Alternative to t-SNE</h3>
@@ -582,21 +612,32 @@ https://arxiv.org/abs/1708.07747
 
 the first million integers, represented as binary vectors indicating their prime factors 
 
-<img src='img/primes_umap_1e6_contrast_enhanced.png'>
+<img src='img/primes_umap_1e6_contrast_enhanced.png' height="300">
 
+<small>
 https://youtu.be/nCk8dyU7zUM
+<br>
 https://twitter.com/algoritmic/status/1036658934042509312
 https://johnhw.github.io/umap_primes/index.md.html
+</small>
 </textarea>
 </section>
 
-        <section data-markdown class="todo">
-                <textarea data-template>
-        ### Wrapping Up
-            
-            </textarea>
-            </section>
-        
+<section data-markdown>
+    <textarea data-template>
+### Dimensionality Reduction with UMAP
+
+1. Much faster than T-SNE with comparable results
+1. Main parameter (number of neighbors) a bit more intinutive
+1. Has abstract model
+1. Can also make use of labels
+
+<small>
+    https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/5-3-umap.ipynb
+</small>
+</textarea>
+</section>
+
 
     </div>
 
