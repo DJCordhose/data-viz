@@ -1,5 +1,5 @@
 # Create a scatter plot that has 4 data points
-# * they shall be displayed as displayed as triangles
+# * they shall be displayed as triangles
 # * each point should have a different color
 # * zoom into the plot so that you only see the two bottom left values
 
