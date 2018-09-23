@@ -159,7 +159,6 @@
             <h2>Altair</h2>
             <h3>Grammar of Graphics and Interactive Data Visualization</h3>
             <p><em>Learn about a different mindset based on the Grammar of Graphics and have interaction in browsers</em></p>
-           
         </section>
 
         <section data-markdown>
@@ -376,7 +375,7 @@ https://altair-viz.github.io/getting_started/installation.html#installation-note
 ```
 alt.Chart(customers).mark_point().encode(
     x='age', 
-    y='max speed', 
+    y='speed', 
     color='group'
 )```
 
@@ -446,7 +445,28 @@ https://colab.research.google.com/github/djcordhose/data-viz/blob/master/noteboo
 <img src='img/car-accidents-altair-crossfilter.png'>
 
 <small>
-https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/4-2-altair-car-insurance-crossfilter.ipynb    
+https://colab.research.google.com/github/djcordhose/data-viz/blob/master/notebooks/4-2-altair-car-insurance-crossfilter.ipynb
+<br>
+<a href='notebooks/chart.html'>Exported HTML</a>
+</small>
+</textarea>
+</section>
+
+<section data-markdown>
+    <textarea data-template>
+### Exercise
+
+_How does it feel to work with Vega-Lite / Altair_
+
+* Go to the interactive vega lite editor and choose the crossfilter example OR
+* Work in the crossfilter notebook
+* Change brushing type from interval to multi value - what change do you see?
+* Change colors
+
+How does it feel? Would you like to work with those tools?
+
+<small>
+https://vega.github.io/editor/#/examples/vega-lite/interactive_layered_crossfilter
 </small>
 </textarea>
 </section>
