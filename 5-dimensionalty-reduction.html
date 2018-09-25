@@ -190,7 +190,7 @@
     
     <section data-markdown>
         <textarea data-template>
-### Experiment with PCA in 2d
+### PCA in 2d
 
 <img src="img/unsupervised/pca_setosa.png">
 
@@ -199,7 +199,8 @@ http://setosa.io/ev/principal-component-analysis/
 </small>
     </textarea>
     </section>
-    <section data-markdown>
+
+    <!-- <section data-markdown>
         <textarea data-template>
 ### Questions
 
@@ -209,7 +210,7 @@ http://setosa.io/ev/principal-component-analysis/
 1. Can you find a configuration of points where none of the principal components could be dropped without loosing a lot of information?
 
     </textarea>
-    </section>
+    </section> -->
 
     <section>
         <h2>How does PCA work?</h2>
@@ -231,48 +232,6 @@ https://en.wikipedia.org/wiki/Principal_component_analysis
 </textarea>
 </section>
 
-<!-- <section data-markdown>
-    <textarea data-template>
-### Objective: Transform to another basis to maximize variance
-
-1. Normalize each original variable
-1. Calculate a _linear_ correlation matrix from these normalized variables
-1. Find the eigenvectors of the correlation matrix
-1. These are mutually orthogonal on the symmetric correlation matrix
-1. _Thus they are uncorrelated_
-1. These eigenvectors are the principal components
-
-<small>
-http://setosa.io/ev/eigenvectors-and-eigenvalues/
-</small>
-</textarea>
-</section>
-
-    
-<section>
-<h3>Example</h3>
-<div class="fragment" style="float: left">
-    <img src="img/unsupervised/pca_plot/original.png" height="300">
-    <p>
-        <small>Original</small>
-    </p>
-</div>
-<div class="fragment" style="float: left; padding-left: 25px">
-    <img src="img/unsupervised/pca_plot/correlation.png" height="300">
-    <p>
-        <small>Correlation</small>
-    </p>
-</div>
-<div class="fragment" style="float: right">
-    <img src="img/unsupervised/pca_plot/reduced.png" height="300">
-    <p>
-        <small>Reduced</small>
-    </p>
-</div>
-<p style="clear: both"><em>notebook: pca_example</em></p>
-</section> -->
-
-
     <section>
         <h3>Intuition in 3d</h3>
         <p>Rotate the camera to a position that reveals the most information</p>
@@ -290,21 +249,9 @@ The Making of Perceptual Shift: https://youtu.be/4DpdpZkl8HI?t=65
 </textarea>
     </section>
     
-    <section data-markdown>
-        <textarea data-template>
-<a href='https://youtu.be/l-GR9IVjU54' target="_blank">
-<img src='img/unsupervised/anti-gun.png' height="500px">
-</a>
-
-<small>
-Michael Murphy's Epic Anti-Gun Artwork for the DNC: https://youtu.be/l-GR9IVjU54
-</small>
-</textarea>
-    </section>
-                
 <section data-markdown>
         <textarea data-template>
-### Optional: Experiment with PCA in 3d
+### Experiment with PCA in 3d
 
 <img src="img/unsupervised/pca_setosa_3d.png" height="400">
 
