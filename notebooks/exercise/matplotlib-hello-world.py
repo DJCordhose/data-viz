@@ -8,3 +8,6 @@ plt.scatter?
 # plt.colors?
 # plt.xlim?
 # plt.ylim?
+
+# import matplotlib
+# matplotlib.markers?
